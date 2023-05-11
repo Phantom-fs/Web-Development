@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-item a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Book container */
+.book-container {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Book title */
+.book-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Book author */
+.book-author {
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Book description */
+.book-description {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+/* Book price */
+.book-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: auto;
+    text-align: center;
+}
+
+/* Buy button */
+.buy-button 
+{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: white;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.buy-button a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.buy-button:hover {
+    background-color: #3e8e41;
+    transition: 0.3s;
+}
